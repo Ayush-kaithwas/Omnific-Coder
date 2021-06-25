@@ -8,7 +8,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url('/images/home.jpg');
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url('images/home.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -133,7 +133,7 @@ nav .fa
     }
 }
 
-/*-----------------Campus--------------*/
+/*-----------------Courses--------------*/
 
 h1{
     font-size: 36px;
@@ -222,7 +222,7 @@ h3{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('/images/pexels-skitterphoto-705164.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('images/pexels-skitterphoto-705164.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 10px;
