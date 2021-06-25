@@ -1,0 +1,113 @@
+
+
+/* --------------------------------Contact page------------------------------------ */
+
+.sub-header{
+    height: 80vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('/images/contact.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.contact-us
+{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.contact-col input:hover, .contact-col textarea:hover
+{
+    border: 1px solid #187dff;
+
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+button{
+    width: 190px;
+    height: 56px;
+    border: 0;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.check-box{
+   width: 61px;
+    height: 61px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgb(0 0 0 / 50%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.check-box svg{
+    width: 38px;
+    margin: 9px;
+}
+
+svg path{
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active{
+    background: #187dff;;
+    transition: 1s;
+}
+
+.active .check-box{
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p{
+    margin-right: 67px;
+    transition: 1s;
+    color: white;
+    font-size: 17px;
+    font-weight: 0;
+    line-height: 0;
+    padding: 0;
+}
+
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}

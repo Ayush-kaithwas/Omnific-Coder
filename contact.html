@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnific Coder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/favicon.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Logo1.png" alt="logo"></a>
+            <div class="nav-link" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Me</h1>
+    </section>
+
+
+    <!-- Contact Us -->
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <textarea rows="8" name="message" placeholder="Enter Your Message Here....." required></textarea>
+                    <button id="btn">
+                        <p id="btnText">Submit</p>
+                        <div class="check-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!----------------Footer--------------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora cum minus in iure, blanditiis sunt<br>
+            illum culpa perferendis odio, alias doloribus quisquam? Pariatur, molestias.</p>
+         <div class="icons">
+            <a href="https://github.com/Ayush-kaithwas" target="blank"><i class="fa fa-github"></i></a>
+            <a href="https://0mnific.blogspot.com/" target="blank"><i class="fa fa-user"></i></a>
+            <a href="https://www.instagram.com/omni_fic/" target="blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Made By Omnific </p>
+    </section>
+
+
+
+    <!-- JavaScript For Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        var btn = document.getElementById("btn");
+        var btnText = document.getElementById("btnText");
+
+        btn.onclick = function () {
+            btnText.innerHTML = "Submitted";
+            btn.classList.add("active");
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

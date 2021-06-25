@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnific Coder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/favicon.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Logo1.png" alt="logo"></a>
+            <div class="nav-link" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Some Projects and Updates</h1>
+    </section>
+
+    <!-------------------Blog Content------------->
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="/images/Cyber.jpg">
+                <h2>Cyber Security</h2>
+                <p><strong>Cyber security</strong> is the practice of defending computers, servers, mobile devices,
+                    electronic systems,
+                    networks, and data from malicious attacks. It's also known as information technology security or
+                    electronic information security. The term applies in a variety of contexts, from business to mobile
+                    computing, and can be divided into a few common categories.</p>
+
+                <p>· Network security is the practice of securing a computer network from intruders, whether targeted
+                    attackers or opportunistic malware.</p>
+
+                <p>· Application security focuses on keeping software and devices free of threats. A compromised
+                    application could provide access to the data its designed to protect. Successful security begins in
+                    the design stage, well before a program or device is deployed.</p>
+
+                <p>· Information security protects the integrity and privacy of data, both in storage and in transit.
+                </p>
+
+                <p>· Operational security includes the processes and decisions for handling and protecting data assets.
+                    The permissions users have when accessing a network and the procedures that determine how and where
+                    data may be stored or shared all fall under this umbrella.</p>
+
+                <p>· Disaster recovery and business continuity define how an organization responds to a cyber-security
+                    incident or any other event that causes the loss of operations or data. Disaster recovery policies
+                    dictate how the organization restores its operations and information to return to the same operating
+                    capacity as before the event. Business continuity is the plan the organization falls back on while
+                    trying to operate without certain resources.</p>
+
+                <p> · End-user education addresses the most unpredictable cyber-security factor: people. Anyone can
+                    accidentally introduce a virus to an otherwise secure system by failing to follow good security
+                    practices. Teaching users to delete suspicious email attachments, not plug in unidentified USB
+                    drives, and various other important lessons is vital for the security of any organization.</p>
+
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form" action="">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email">
+                        <textarea rows="5" placeholder="Your Message..."></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+                <!----------------Footer--------------->
+
+                <section class="footer">
+                    <h4>About Us</h4>
+                    <p>Omnific Coder is my attempt to teach coding basics to those who wants to learn coding<br>
+                        I offer free courses with great explanation.</p>
+                    <div class="icons">
+                        <a href="https://github.com/Ayush-kaithwas" target="blank"><i class="fa fa-github"></i></a>
+                        <a href="https://0mnific.blogspot.com/" target="blank"><i class="fa fa-user"></i></a>
+                        <a href="https://www.instagram.com/omni_fic/" target="blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <p>Made By Omnific </p>
+                </section>
+
+
+
+                <!-- JavaScript For Toggle Menu -->
+                <script>
+                    var navLinks = document.getElementById("navLinks");
+                    function showMenu() {
+                        navLinks.style.right = "0";
+                    }
+
+                    function hideMenu() {
+                        navLinks.style.right = "-200px";
+                    }
+                </script>
+</body>
+
+</html>

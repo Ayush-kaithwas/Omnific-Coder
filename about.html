@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnific Coder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Logo1.png" alt="logo"></a>
+            <div class="nav-link" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+    </section>
+
+    <!---------------------------about us content----------------------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Talk Is Cheap. Show Me The Code</h1>
+                <p>Welcome to Omnific,One of the best platform to learn coding skills. I'm dedicated to give you
+                    the very best of coding knowledge, with a focus on Basics, Secrets,
+                    and how to avoid mistakes.<br>
+
+
+                    Founded in 2020 by Ayush, Omnific has come a long way from its beginnings in 2020. so
+                    that Omnific can offer you the World's most advanced
+                    Coding Techniques.<br>
+
+
+                    I hope you will enjoy my Courses as much as I enjoy offering them to you. If you have
+                    any questions or comments, please don't hesitate to contact me.<br>
+
+
+                    Sincerely,<br>
+
+                    Ayush</p>
+                <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="/images/favicon.png">
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!----------------Footer--------------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Omnific Coder is my attempt to teach coding basics to those who wants to learn coding<br>
+            I offer free courses with great explanation.</p>
+        <div class="icons">
+            <a href="https://github.com/Ayush-kaithwas" target="blank"><i class="fa fa-github"></i></a>
+            <a href="https://0mnific.blogspot.com/" target="blank"><i class="fa fa-user"></i></a>
+            <a href="https://www.instagram.com/omni_fic/" target="blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Made By Omnific </p>
+    </section>
+
+
+
+    <!-- JavaScript For Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
