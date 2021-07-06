@@ -8,3 +8,6 @@
 * click on index.html and you can see the wesite
 
 ### Do not delete any file or folder otherwise it may not work properly
+
+  * Follow me on instagram at [Omnific](https://www.instagram.com/omni_fic/)
+   * My Blog at [Omnific](http://0mnific.blogspot.com/)
